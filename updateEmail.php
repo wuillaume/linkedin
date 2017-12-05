@@ -39,19 +39,20 @@
     $id =0;
     $email="";
     $pass="";
-    //FOREACH
-	foreach ($array as  $fila){
+    
+  foreach ($array as  $fila){
         if (!isset($fila[2])){
               $email = $fila[0];
               $pass = $fila[1];
-		    break;
-		    }
-		$id++;
-	 }
+        break;
+        }
+    $id++;
+   }
 
    if ($email ==''){
          echo '<h3 style="color:blue; text-align:center;">Empty</h3>';
-   }else{
+   }
+   else{
       echo '<h3 style="color:blue; text-align:center;">'.$email.','.$pass.'</h3>';
       array_push($array[$id],"use");
    }
