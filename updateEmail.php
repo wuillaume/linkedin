@@ -37,15 +37,26 @@
  if ($valor==''){
     //muestro en pantalla el correo y clave del txt
     $id =0;
+    $email="";
+    $pass="";
 	foreach ($array as  $fila){
         if (!isset($fila[2])){
-        	echo '<h3 style="color:blue; text-align:center;">'.$fila[0].','.$fila[1].'</h3>';
-        	array_push($array[$id],"use");
+              $email = $fila[0];
+              $pass = $fila[1];
 		    break;
 		    }
 		$id++;
 	 }
+
+   if ($email ==''){
+         echo '<h3 style="color:blue; text-align:center;">Empty</h3>';
+   }else{
+      echo '<h3 style="color:blue; text-align:center;">'.$email.','.$pass.'</h3>';
+      array_push($array[$id],"use");
+   }
+
   WriterTXT();
+
 }else{
   //se guarda el valor block al array 
 	$id =0;
