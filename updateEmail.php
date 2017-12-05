@@ -50,10 +50,10 @@
    }
 
    if ($email ==''){
-         echo '<h3 style="color:blue; text-align:center;">Empty</h3>';
+         echo '<h3>Empty</h3>';
    }
    else{
-      echo '<h3 style="color:blue; text-align:center;">'.$email.','.$pass.'</h3>';
+      echo '<h3>'.$email.','.$pass.'</h3>';
       array_push($array[$id],"use");
    }
 
