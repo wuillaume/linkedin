@@ -39,7 +39,6 @@
     $id =0;
     $email="";
     $pass="";
-    //FOREACH
 	foreach ($array as  $fila){
         if (!isset($fila[2])){
               $email = $fila[0];
